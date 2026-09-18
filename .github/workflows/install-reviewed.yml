@@ -1,0 +1,11 @@
+name: Publish reviewed preview
+on:
+  push:
+    branches: [gh-pages]
+    paths: ['.github/workflows/install-reviewed.yml']
+permissions:
+  contents: write
+  pages: write
+jobs:
+  publish:
+    uses: SharpSites-demo/armour-fitness-studio-new-colony-demo/.github/workflows/install-reviewed.yml@7b128b8ee7e73248343a0e3114207bcd6e861574
